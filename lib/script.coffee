@@ -1,5 +1,9 @@
 $ ->
 
+	$('#masthead ul').responsiveSlides({
+			speed:800;
+		});
+
 	# $.ajax
 	# 	url: 'data/series.json'
 	# 	type: 'GET'
