@@ -25,12 +25,14 @@ body, html {
 	height: 100%;
 }
 
-h1, h2 {
+h2 {
 	text-transform: uppercase;
-	font-size: 1.8em;
+	font-size: 1.9em;
 	font-weight: 700;
 	margin: 0 0 $margin;
+	border-bottom: 2px solid $pink;
 }
+
 
 div#container {
 	height: 100%;
@@ -82,7 +84,7 @@ div#content {
 	div#main {
 		flex: 3;
 		div#gallery {
-			flex: 3;
+			
 			ul {
 				display: flex;
 				flex-wrap: wrap;
