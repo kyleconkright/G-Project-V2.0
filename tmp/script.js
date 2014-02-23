@@ -8,7 +8,7 @@
         type: 'GET',
         dataType: 'json',
         success: function(data) {
-          return $('<li></li>').append('<p><i class="fa fa-play-circle-o"></i></p><p><span class="artist">' + data.results[0].artistName + '</span> - <span class="song">"' + data.results[0].trackName + '"</span></p>').appendTo('#playlist ul');
+          return $('<li></li>').append('<p><a href="' + data.results[0].previewUrl + '"><i class="fa fa-play-circle-o"></i></a></p><p><span class="artist">' + data.results[0].artistName + '</span> - <span class="song">"' + data.results[0].trackName + '"</span></p>').appendTo('#playlist ul');
         }
       });
     };
@@ -16,13 +16,21 @@
       song = songs[_i];
       itunes(song);
     }
+    $('button').on('click', function() {
+      return $('#demo').trigger('play');
+    });
     return $.ajax({
       url: 'data/series.json',
       type: 'GET',
       dataType: 'json',
       success: function(results) {
         return $.each(results.response.seriesList, function() {
-          return console.log(this.title);
+          $('<h2>' + this.title + '</h2><ul id="' + this.id + '"></ul>').appendTo('#gallery');
+          console.log(this.title);
+          return $.each(this.photoSet.photo, function() {
+            $('<li style="background-image: url(assets/series/' + this.url + ');""></li>').appendTo('div#gallery ul#' + this.rel);
+            return console.log(this.url);
+          });
         });
       }
     });

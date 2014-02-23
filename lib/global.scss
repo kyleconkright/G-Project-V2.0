@@ -1,6 +1,13 @@
+// VARIABLES
+$margin: 16px;
+$white:  #f6f6f6;
+$pink: pink;
+$lightblue: lightblue;
+
+
 * {
 	font-size: 98%;
-	color: #f6f6f6;
+	color: $white;
 	font-weight: 300;
 	font-family: Roboto Condensed;
 	line-height: 1.5em;
@@ -18,10 +25,11 @@ body, html {
 	height: 100%;
 }
 
-h2 {
+h1, h2 {
 	text-transform: uppercase;
-	font-size: 1.65em;
+	font-size: 1.8em;
 	font-weight: 700;
+	margin: 0 0 $margin;
 }
 
 div#container {
@@ -63,6 +71,7 @@ div#masthead {
 }
 
 div#content {
+	display: flex;
 	padding: 2%;
 	background: url('../../assets/img/sitebg2.jpg') top no-repeat;
 	background-size: cover;
@@ -71,40 +80,63 @@ div#content {
 		padding: 2%;
 	}
 	div#main {
-		display: flex;
-		div {
-			padding: 2%;
-			h2, p {
-				margin: 0 0 16px;
-			}
-		}
-		div#intro {
-			flex: 1;
-			text-align: right;
-		}
+		flex: 3;
 		div#gallery {
 			flex: 3;
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				margin: 0 0 $margin*2;
+				li {
+					width: 120px;
+					height: 80px;
+					background-size: cover;
+					background-position: top;
+					margin: 0 1% 1% 0;
+					border: 3px solid $lightblue; 
+				}
+			}
+		}
+		div#playlist {
+			ul {
+				li {
+					padding: 1% 0;
+					font-size: 1.25em;
+					display: flex;
+					align-items: center;
+					p:last-of-type {
+						flex: 1;
+						font-style: italic;
+					}
+					p i {
+						font-size: 2em;
+						color: $pink;
+						margin: 0 $margin 0 0;
+					}
+				}
+			}
 		}
 	}
-
-	div#playlist {
-		padding: 4%;
-		li {
-			padding: 1% 0;
-			font-size: 1.5em;
-			display: flex;
-			align-items: center;
+	div#sidebar {
+		flex: 1;
+		text-align: right;
+		div {
+			margin: 0 0 $margin*2;
 			p {
+				margin: 0 0 $margin;
 			}
-			p:last-of-type {
-				flex: 1;
-				font-style: italic;
-			}
-			p i {
-				font-size: 2.5em;
-				color: pink;
-				margin: 0 20px 0 0;
-			}
+		}
+		div#quote p {
+			font-family: Radley;
+			font-style: italic;
+			font-weight: 400;
+			line-height: 1.1em;
+			font-size: 1.9em;
+			text-align: right;
+			color: #ddd;
+			border: dotted rgba(255,255,255,.25);
+			border-width: 1px 0;
+			padding: $margin $margin $margin 0;
 		}
 	}
 }
