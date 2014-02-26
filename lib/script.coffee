@@ -24,7 +24,7 @@ $ ->
 				$('<h2>' + this.title + '</h2><ul id="' + this.id + '"></ul>')
 				.appendTo('#gallery')
 				$.each this.photoSet.photo, ->
-					$('<li style="background-image: url(assets/series/' + this.url + ');""><a href="assets/series/' + this.url + '" data-lightbox-gallery="' + this.rel + '" title="' + this.caption + '"></a></li>')
+					$('<li style="background-image: url(assets/series/' + this.rel + '/' + this.url + ');"><a href="assets/series/'+ this.rel + '/' + this.url + '" data-lightbox-gallery="' + this.rel + '" title="' + this.caption + '"></a></li>')
 					.appendTo('div#gallery ul#' + this.rel)
 		complete: ->
 			$('#gallery ul li a').nivoLightbox({
@@ -32,5 +32,16 @@ $ ->
 				keyboardNav: true,
 				clickOverlayToClose: true
 				})
+
+	$.ajax
+		url: 'data/series.json'
+		type: 'GET'
+		dataType: 'json'
+		success: (results) ->
+			$.each results.response.masthead, ->
+				$('<li style="background-image: url(assets/series/' + this.id + '/' + this.mastPhoto + ');"></li>').appendTo('#masthead ul')
+		complete: ->
+			$("#masthead ul").responsiveSlides()
+
 	
 

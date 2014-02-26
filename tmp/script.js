@@ -21,7 +21,7 @@
       song = songs[_i];
       itunes(song);
     }
-    return $.ajax({
+    $.ajax({
       url: 'data/series.json',
       type: 'GET',
       dataType: 'json',
@@ -29,7 +29,7 @@
         return $.each(results.response.seriesList, function() {
           $('<h2>' + this.title + '</h2><ul id="' + this.id + '"></ul>').appendTo('#gallery');
           return $.each(this.photoSet.photo, function() {
-            return $('<li style="background-image: url(assets/series/' + this.url + ');""><a href="assets/series/' + this.url + '" data-lightbox-gallery="' + this.rel + '" title="' + this.caption + '"></a></li>').appendTo('div#gallery ul#' + this.rel);
+            return $('<li style="background-image: url(assets/series/' + this.rel + '/' + this.url + ');"><a href="assets/series/' + this.rel + '/' + this.url + '" data-lightbox-gallery="' + this.rel + '" title="' + this.caption + '"></a></li>').appendTo('div#gallery ul#' + this.rel);
           });
         });
       },
@@ -39,6 +39,19 @@
           keyboardNav: true,
           clickOverlayToClose: true
         });
+      }
+    });
+    return $.ajax({
+      url: 'data/series.json',
+      type: 'GET',
+      dataType: 'json',
+      success: function(results) {
+        return $.each(results.response.masthead, function() {
+          return $('<li style="background-image: url(assets/series/' + this.id + '/' + this.mastPhoto + ');"></li>').appendTo('#masthead ul');
+        });
+      },
+      complete: function() {
+        return $("#masthead ul").responsiveSlides();
       }
     });
   });
