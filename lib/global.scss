@@ -9,7 +9,7 @@ $lightblue: lightblue;
 	font-size: 98%;
 	color: $white;
 	font-weight: 300;
-	font-family: Roboto Condensed;
+	font-family: Roboto Condensed, Arial Narrow;
 	line-height: 1.5em;
 	padding: 0;
 	margin: 0;
@@ -33,6 +33,12 @@ h2 {
 	border-bottom: 2px solid $pink;
 }
 
+.btn {
+	border: 2px solid;
+	border-radius: 3px;
+	padding: 2%;
+}
+
 
 div#container {
 	height: 100%;
@@ -51,14 +57,19 @@ nav {
 		li {
 			display: flex;
 			flex: 1;
-			align-items: top;
+			align-items: center;
 			height: 50px;
 			img {
-				height: inherit;
+				height: 30px;
 			}
 		}
 		li:last-of-type {
 			justify-content: flex-end;
+			a {
+				text-transform: uppercase;
+				font-size: .9em;
+				font-style: italic;
+			}
 		} 
 	}
 }
@@ -84,18 +95,41 @@ div#content {
 	div#main {
 		flex: 3;
 		div#gallery {
-			
 			ul {
 				display: flex;
 				flex-wrap: wrap;
 				margin: 0 0 $margin*2;
 				li {
-					width: 120px;
+					width: 15.83%;
 					height: 80px;
 					background-size: cover;
 					background-position: top;
 					margin: 0 1% 1% 0;
-					border: 3px solid $lightblue; 
+					border: 3px solid $lightblue;
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+					} 
+				}
+				li:nth-child(6n) {
+					margin: 0 0 1% 0;
+				}
+			}
+			div#cover {
+				display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 2;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,.9);
+				font-size: 1.5em;
+				.close {
+					position: absolute;
+					right: 1%;
+					top: 1%;
 				}
 			}
 		}
@@ -106,9 +140,20 @@ div#content {
 					font-size: 1.25em;
 					display: flex;
 					align-items: center;
-					p:last-of-type {
+					p:nth-of-type {
 						flex: 1;
 						font-style: italic;
+					}
+					p:last-of-type {
+						text-align: right;
+						font-size: .75em;
+						flex: 1;
+						text-transform: lowercase;
+						opacity: .75;
+						i {
+							font-size: 1em;
+							color: inherit;
+						}
 					}
 					p i {
 						font-size: 2em;
@@ -126,6 +171,9 @@ div#content {
 			margin: 0 0 $margin*2;
 			p {
 				margin: 0 0 $margin;
+				a {
+					text-decoration: underline;
+				}
 			}
 		}
 		div#quote p {

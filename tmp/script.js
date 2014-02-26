@@ -8,7 +8,12 @@
         type: 'GET',
         dataType: 'json',
         success: function(data) {
-          return $('<li></li>').append('<p><a href="' + data.results[0].previewUrl + '"><i class="fa fa-play-circle-o"></i></a></p><p><span class="artist">' + data.results[0].artistName + '</span> - <span class="song">"' + data.results[0].trackName + '"</span></p>').appendTo('#playlist ul');
+          return $('<li></li>').append('<p><a href="' + data.results[0].previewUrl + '"><i class="fa fa-play-circle-o"></i></a></p><p><span class="artist">' + data.results[0].artistName + '</span> - <span class="song">"' + data.results[0].trackName + '"</span></p><p>Buy it <i class="fa fa-apple"></i></p>').appendTo('#playlist ul');
+        },
+        complete: function() {
+          return $('#playlist ul li:even').css({
+            'background': 'rgba(255,255,255,.1)'
+          });
         }
       });
     };
@@ -16,9 +21,6 @@
       song = songs[_i];
       itunes(song);
     }
-    $('button').on('click', function() {
-      return $('#demo').trigger('play');
-    });
     return $.ajax({
       url: 'data/series.json',
       type: 'GET',
@@ -26,11 +28,16 @@
       success: function(results) {
         return $.each(results.response.seriesList, function() {
           $('<h2>' + this.title + '</h2><ul id="' + this.id + '"></ul>').appendTo('#gallery');
-          console.log(this.title);
           return $.each(this.photoSet.photo, function() {
-            $('<li style="background-image: url(assets/series/' + this.url + ');""></li>').appendTo('div#gallery ul#' + this.rel);
-            return console.log(this.url);
+            return $('<li style="background-image: url(assets/series/' + this.url + ');""><a href="assets/series/' + this.url + '" data-lightbox-gallery="' + this.rel + '" title="' + this.caption + '"></a></li>').appendTo('div#gallery ul#' + this.rel);
           });
+        });
+      },
+      complete: function() {
+        return $('#gallery ul li a').nivoLightbox({
+          theme: 'default',
+          keyboardNav: true,
+          clickOverlayToClose: true
         });
       }
     });

@@ -1,1 +1,0 @@
-(function(){$(function(){return $.ajax({url:"data/series.json",type:"GET",dataType:"json",success:function(e){return $.each(e.response.seriesList,function(){return $("<div></div>").append("<h1>"+this.title+"</h1>").appendTo("#container")})}})})}).call(this);

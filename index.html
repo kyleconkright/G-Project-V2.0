@@ -3,6 +3,8 @@
     <head>
         <title>G-Project</title>
         <link rel="stylesheet" href="build/css/global.css">
+        <link rel="stylesheet" href="tmp/lightbox.css">
+        <link rel="stylesheet" href="tmp/lightbox-theme.css">
     </head>
     <body>
 
@@ -10,8 +12,8 @@
 
         <nav id="main-nav" role="navigation">
             <ul>
-                <li id="signature"><img src="assets/img/signaturepink.svg"></li>
-                <li><a href="#">return to G-Project <i class="fa fa-angle-double-right"></i></a></li>
+                <li id="signature"><img src="assets/img/signaturepink2.svg"></li>
+                <li><a href="#" class="btn">return to G-Project <i class="fa fa-angle-double-right"></i></a></li>
             </ul>
         </nav>
 
@@ -24,7 +26,7 @@
                 <div id="intro">
                     <h2>G-Project + Jay</h2>
                     <p>As adventure-loving fans of the outdoors and the thrill-seeking lifestyle it has to offer, we set out to capture and tell stories through breathtaking photography inspired by California culture. So we teamed up with photographer Jay Watson to bring you a series of photos that embrace Get Out And Play and showcase the beautiful environments our products are designed to play in. We first discovered Jay's work online (thank you, Pinterest!) and became immediate fans and then friends. We love his ability to capture authentic and often gritty moments and make them stunningly beautiful. See below to learn more about Jay Watson.</p>
-                    <p>A special shout out to skateboarder Evelyn Abad, Ed Fladung of Quality Peoples and surfers Justin Knowles and Tommy Romero for being a part of the Jay Watson for G-Project photography series.</p>
+                    <p>A special shout out to skateboarder <a href="http://instagram.com/evelynabad93" target="_blank">Evelyn Abad</a>, <a href="#">Ed Fladung</a> of <a href="#">Quality Peoples</a> and surfers <a href="#">Justin Knowles</a> and <a href="#">Tommy Romero</a> for being a part of the Jay Watson for G-Project photography series.</p>
                 </div><!--end intro-->
 
                 <div id="quote">
@@ -35,7 +37,7 @@
                     <h2>About Jay Watson</h2>
                     <p>Jay Watson is a commercial photographer based out of San Francisco specializing in lifestyle, sports, and environmental portraits. When he is not day dreaming about building a log cabin, he is shooting assignments for apparel, editorial, and advertising clients. Much of Jay's professional and personal work is influenced by California's culture both past and present. His work has been featured by photo industry companies like Lexar Media, Nikon, and several photo award shows. If you asked him what was his most difficult assignment he'd say "photographing Mavericks in 50 ft swells from a moving boat for 7 hours while sea sick." When asking him which assignment was the most rewarding you'll probably get the same answer.</p>
                     <p>Music has always converged with Jay's experiences in photography. "I studied photos in skate mags as a teenager with punk records, stood over darkroom sinks in college with hip hop, and countless hours have been spent in Photoshop with John Coltrane and Howlin Wolf. The best part about working with G Project Gear is that I'm listening to more music now than ever before. The speakers travel well and they're bombproof. I always have something charged and ready to play music on location. It's a nice surprise for people."</p>
-                    <p>Be sure to find Jay on Twitter and Instagram in addition to checking out his work at jaywatson.com. More info about Jay's shoots can be found on his blog.</p>
+                    <p>Be sure to find Jay on <a href="https://twitter.com/jaywatsonphoto" target="_blank">Twitter</a> and <a href="http://instagram.com/jaywatsonphoto/" target="_blank">Instagram</a> in addition to checking out his work at <a href="http://www.jaywatson.com/" target="_blank">jaywatson.com</a>. More info about Jay's shoots can be found on his <a href="http://www.jaywatson.com/blog/" target="_blank">blog.</a></p>
                 </div><!--end about-->                
 
             </div><!--end sidebar-->
@@ -43,7 +45,9 @@
 
             <div id="main">
 
-                <div id="gallery"></div><!--end about-->
+                <div id="gallery">
+                    <div id="cover"><a href="#" class="close"><i class="fa fa-times"></i></a></div>
+                </div><!--end about-->
 
                 <div id="playlist">
                     <!-- <h2>Jay's Reggae Mix</h2> -->
@@ -57,6 +61,8 @@
         
 
         </div><!--end container-->
+
+        <div id="cover"></div>
 
         <script src="build/js/vendor.min.js"></script>
         <script src="build/js/script.min.js"></script>

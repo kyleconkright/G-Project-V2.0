@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 		autoprefixer: {
             dist: {
                 files: {
-                    'build/css/global.css': 'tmp/global.css'
+                    'build/css/global.css':['tmp/lightbox.css']
                 }
             }
         },
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
       	uglify: {
       		my_target: {
       		    files: {
-      		    	'build/js/vendor.min.js': 'lib/vendor/*.js',
+      		    	'build/js/vendor.min.js': ['lib/vendor/jquery.js','lib/vendor/lightbox.js'],
       		    	'build/js/script.min.js': 'tmp/script.js'
       		    }
       		}
@@ -58,9 +58,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify','sass','autoprefixer','coffee','watch']);
+  grunt.registerTask('default', ['uglify','sass','autoprefixer','coffee','watch','imagemin']);
 
 
 };
