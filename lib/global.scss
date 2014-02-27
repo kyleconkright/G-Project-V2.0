@@ -3,6 +3,7 @@ $margin: 16px;
 $white:  #f6f6f6;
 $pink: pink;
 $lightblue: lightblue;
+$dark: #26272b;
 
 
 * {
@@ -25,6 +26,10 @@ body, html {
 	height: 100%;
 }
 
+
+
+// ------------------------------- UNIVERSAL
+
 h2 {
 	text-transform: uppercase;
 	font-size: 1.9em;
@@ -39,10 +44,17 @@ h2 {
 	padding: 2%;
 }
 
+i {
+	color: inherit;
+	font-size: inherit;
+}
+
+
+// ------------------------------- LAYOUT
 
 div#container {
 	height: 100%;
-	max-width: 1440px;
+	max-width: 1920px;
 	margin: 0 auto;
 }
 
@@ -50,14 +62,14 @@ nav {
 	position: absolute;
 	z-index: 2;
 	width: 100%;
-	max-width: 1440px;
+	max-width: 1920px;
 	ul {
 		display: flex;
 		padding: 2%;
 		li {
 			display: flex;
 			flex: 1;
-			align-items: center;
+			align-items: top;
 			height: 50px;
 			img {
 				height: 30px;
@@ -104,12 +116,14 @@ div#masthead {
 			left: 0;
 			top: 0;
 			div {
-				display: flex;
-				height: 100%;
-				justify-content: center;
-				align-items: center;
+				position: absolute;
+				bottom: 2%;
+				right: 2%;
+
 				p {
-					
+					// flex: 1;
+					font-style: italic;
+					text-align: right;
 				}
 			}
 		}
@@ -135,12 +149,32 @@ div#content {
 	background: url('../../assets/img/sitebg2.jpg') top no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	max-width: 1440px;
+	margin: 0 auto;
 	> div {
 		padding: 2%;
 	}
 	div#main {
 		flex: 3;
 		div#gallery {
+			div {
+				display: flex;
+				align-items: center;
+				margin: 0 0 $margin;
+				border-bottom: 2px solid $pink;
+				h2 {
+					border: none;
+					margin: 0;
+				}
+				a {
+					text-align: right;
+					flex: 1;
+					i {
+						margin: 0 1.25%;
+						font-size: 1.25em;
+					}
+				}	
+			}
 			ul {
 				display: flex;
 				flex-wrap: wrap;
@@ -182,29 +216,29 @@ div#content {
 		div#playlist {
 			ul {
 				li {
-					padding: 1% 0;
+					padding: 1%;
 					font-size: 1.25em;
 					display: flex;
 					align-items: center;
-					p:nth-of-type {
-						flex: 1;
-						font-style: italic;
-					}
-					p:last-of-type {
-						text-align: right;
-						font-size: .75em;
-						flex: 1;
-						text-transform: lowercase;
-						opacity: .75;
+					a.play {
 						i {
-							font-size: 1em;
-							color: inherit;
+							font-size: 1.75em;
+							color: pink;
 						}
 					}
-					p i {
-						font-size: 2em;
-						color: $pink;
-						margin: 0 $margin 0 0;
+					p {
+						font-style: italic;
+						margin: 0 0 0 1%;
+					}
+					a.buy{
+						text-align: right;
+						flex: 1;
+						font-size: .8em; 
+						transition: color .4s;
+						color: #ddd;
+						&:hover {
+							color: white;
+						}
 					}
 				}
 			}
@@ -212,7 +246,7 @@ div#content {
 	}
 	div#sidebar {
 		flex: 1;
-		text-align: right;
+		// text-align: right;
 		div {
 			margin: 0 0 $margin*2;
 			p {
@@ -227,13 +261,36 @@ div#content {
 			font-style: italic;
 			font-weight: 400;
 			line-height: 1.1em;
-			font-size: 1.9em;
-			text-align: right;
+			font-size: 2.1em;
+			text-align: center;
 			color: #ddd;
 			border: dotted rgba(255,255,255,.25);
 			border-width: 1px 0;
-			padding: $margin $margin $margin 0;
+			padding: $margin;
 		}
+	}
+}
+
+footer {
+	height: 20vh;
+	min-height: 200px;
+	max-height: 400px;
+	background: $dark;
+	display: flex;
+	padding: $margin;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	img:last-of-type {
+		height: 25px;
+		// margin: $margin 0 0 0;
+	}
+	a:last-of-type {
+		margin: $margin 0 0;
+		font-size: .8em;
+		opacity: .5;
+		font-style: italic;
+		text-transform: uppercase;
 	}
 }
 

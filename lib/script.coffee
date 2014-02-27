@@ -8,7 +8,7 @@ $ ->
 		dataType: 'json'
 		success: (data) ->
 			$('<li></li>')
-			.append('<p><a href="' + data.results[0].previewUrl + '"><i class="fa fa-play-circle-o"></i></a></p><p><span class="artist">' + data.results[0].artistName + '</span> - <span class="song">"' + data.results[0].trackName + '"</span></p><p>Buy it <i class="fa fa-apple"></i></p>')
+			.append('<a class="play" href="' + data.results[0].previewUrl + '"><i class="fa fa-play-circle-o"></i></a><p><span class="artist">' + data.results[0].artistName + '</span> - <span class="song">"' + data.results[0].trackName + '"</span></p><a class="buy" href="' + data.results[0].trackViewUrl + '">Buy it <i class="fa fa-apple"></i></a>')
 			.appendTo('#playlist ul')
 		complete: ->
 			$('#playlist ul li:even').css('background':'rgba(255,255,255,.1)');
@@ -21,7 +21,7 @@ $ ->
 		dataType: 'json'
 		success: (results) ->
 			$.each results.response.seriesList, ->
-				$('<h2>' + this.title + '</h2><ul id="' + this.id + '"></ul>')
+				$('<div id="gallery-title"><h2>' + this.title + '</h2><a class="gallery-share"><i class="fa fa-twitter"></i><i class="fa fa-facebook"></i><i class="fa fa-pinterest"></i></a></div><ul id="' + this.id + '"></ul>')
 				.appendTo('#gallery')
 				$.each this.photoSet.photo, ->
 					$('<li style="background-image: url(assets/series/' + this.rel + '/' + this.url + ');"><a href="assets/series/'+ this.rel + '/' + this.url + '" data-lightbox-gallery="' + this.rel + '" title="' + this.caption + '"></a></li>')
@@ -39,7 +39,7 @@ $ ->
 		dataType: 'json'
 		success: (results) ->
 			$.each results.response.masthead, ->
-				$('<li style="background-image: url(assets/series/' + this.id + '/' + this.mastPhoto + ');"></li>').appendTo('#masthead ul')
+				$('<li style="background-image: url(assets/series/' + this.id + '/' + this.mastPhoto + ');"><div class="mastcaption"><p>' + this.title + '</p></div></li>').appendTo('#masthead ul')
 		complete: ->
 			$("#masthead ul").responsiveSlides()
 

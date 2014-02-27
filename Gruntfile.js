@@ -36,6 +36,20 @@ module.exports = function(grunt) {
       		    }
       		}
 	    },
+	    imagemin: {                          
+	        dynamic: {
+	        	options: {
+	        		optimizationLevel: 1,
+	        		cache: false
+	        	}, 
+		        files: [{
+		          expand: true,
+		          cwd: 'assets/series-max/',
+		          src: ['**/*.jpg'],
+		          dest: 'assets/series/'
+		        }]
+	        }
+	    },
 	    watch: {
 	     	css: {
 	        	files: 'lib/*.scss',
