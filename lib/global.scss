@@ -24,7 +24,15 @@ $dark: #26272b;
 
 body, html {
 	height: 100%;
+	// background: #afb5cb;
 }
+
+body {
+	background: url('../../assets/img/sitebg2.jpg') top no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 
 
 
@@ -146,9 +154,9 @@ div#masthead {
 div#content {
 	display: flex;
 	padding: 2%;
-	background: url('../../assets/img/sitebg2.jpg') top no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+	// background: url('../../assets/img/sitebg2.jpg') top no-repeat;
+	// background-size: cover;
+	// background-attachment: fixed;
 	max-width: 1440px;
 	margin: 0 auto;
 	> div {
@@ -166,7 +174,7 @@ div#content {
 					border: none;
 					margin: 0;
 				}
-				a {
+				.share {
 					text-align: right;
 					flex: 1;
 					i {

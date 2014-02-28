@@ -8,7 +8,7 @@ $ ->
 		dataType: 'json'
 		success: (data) ->
 			$('<li></li>')
-			.append('<a class="play" href="' + data.results[0].previewUrl + '"><i class="fa fa-play-circle-o"></i></a><p><span class="artist">' + data.results[0].artistName + '</span> - <span class="song">"' + data.results[0].trackName + '"</span></p><a class="buy" href="' + data.results[0].trackViewUrl + '">Buy it <i class="fa fa-apple"></i></a>')
+			.append('<a class="play" href="' + data.results[0].previewUrl + '"><i class="fa fa-play-circle-o"></i></a><p><span class="artist">' + data.results[0].artistName + '</span> - <span class="song">"' + data.results[0].trackName + '"</span></p><a class="buy" target="_blank" href="' + data.results[0].trackViewUrl + '"><i class="fa fa-apple"></i> iTunes</a>')
 			.appendTo('#playlist ul')
 		complete: ->
 			$('#playlist ul li:even').css('background':'rgba(255,255,255,.1)');
@@ -21,7 +21,15 @@ $ ->
 		dataType: 'json'
 		success: (results) ->
 			$.each results.response.seriesList, ->
-				$('<div id="gallery-title"><h2>' + this.title + '</h2><a class="gallery-share"><i class="fa fa-twitter"></i><i class="fa fa-facebook"></i><i class="fa fa-pinterest"></i></a></div><ul id="' + this.id + '"></ul>')
+				$('<div id="gallery-title">
+						<h2>' + this.title + '</h2>
+						<span class="share">
+							<a href="http://twitter.com/share?url=http%3A%2F%2Fjay.gprojectgear.com%2F%23' + this.id + '" target="_blank"><i class="fa fa-twitter"></i></a>
+							<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[summary]=Stream%20Eric%20Hutchinson%27s%20New%20Single%20%22TELL%20THE%20WORLD%22&p[url]=http%3A%2F%2Fjay.gprojectgear.com%2F%23' + this.id + '" target="_blank"><i class="fa fa-facebook"></i></a>
+							<a href="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fjay.gprojectgear.com%2F%23' + this.id + '&media=http%3A%2F%2Fkyleconkright.com/jay/assets/series/' + this.id + '/' + this.photoSet.photo[0].url + '&description=' + this.title + '" target="_blank"><i class="fa fa-pinterest"></i></a>
+						</span>
+					</div>
+					<ul id="' + this.id + '"></ul>')
 				.appendTo('#gallery')
 				$.each this.photoSet.photo, ->
 					$('<li style="background-image: url(assets/series/' + this.rel + '/' + this.url + ');"><a href="assets/series/'+ this.rel + '/' + this.url + '" data-lightbox-gallery="' + this.rel + '" title="' + this.caption + '"></a></li>')
