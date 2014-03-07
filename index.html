@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SoundManager</title>
+        <title>Rdio</title>
         <link rel="stylesheet" href="tmp/lightbox.css">
         <link rel="stylesheet" href="tmp/lightbox-theme.css">
         <link rel="stylesheet" href="build/css/global.css">
@@ -52,14 +52,31 @@
                 <div id="gallery"></div><!--end about-->
 
                 <div id="playlist">
-                    <!-- <h2>Jay's Reggae Mix</h2> -->
                     <ul></ul>
                 </div><!--end playlist-->
+
+                <div id="upsell" class="alert alert-info alert-dismissable">
+                  <div style="display: none;" id="subscriber">You are an Rdio subscriber. You're awesome.</div>
+                  <div style="display: none;" id="trial">You are an Rdio trial user, Subscribe now!</div>
+                  <div style="display: none;" id="free">You are an Rdio Free user with <span id="remaining"></span>% of your quota remaining, subscribe now!</div>
+                  <div style="display: none;" id="nobody">To hear full tracks subscribe to Rdio.</div>
+                </div>
+
+                <div id="apiswf"></div>
+                        
+                <button id="play" class="btn btn-default"><i class="fa fa-play-circle"></i> Play</button>
+                <button id="stop" class="btn btn-default"><i class="fa fa-stop"></i> Stop</button>
+                <button id="previous" class="btn btn-default"><i class="fa fa-step-backward"></i> Previous</button>
+                <button id="next" class="btn btn-default"><i class="fa fa-step-forward"></i> Next</button>
+                        
+                <h3><span id="artist"></span>&nbsp;<span id="track"></span></h3>
+                  
             
             </div><!--end main-->
 
         </div><!--end content-->
 
+        
 
         <footer>
             <a href="http://www.gprojectgear.com"><img src="assets/img/logoheadpink.svg"></a>
@@ -72,6 +89,8 @@
 
 
         <script src="build/js/vendor.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/swfobject/2/swfobject.js"></script>
+        <!--<script src="build/js/hello.js"></script>-->
         <script src="build/js/script.min.js"></script>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400italic,400,700|Radley:400italic' rel='stylesheet' type='text/css'>   
