@@ -47,6 +47,9 @@ $(document).ready(function() {
   $('#stop').click(function() { apiswf.rdio_stop(); });
   $('#previous').click(function() { apiswf.rdio_previous(); });
   $('#next').click(function() { apiswf.rdio_next(); });
+  $('#pause').click(function() { apiswf.rdio_pause(); });
+  $('#resume').click(function() { apiswf.rdio_play(); });
+  $('#stop').click(function() { apiswf.rdio_stop(); });
 });
 
 
@@ -55,7 +58,6 @@ var callback_object = {};
 
 callback_object.ready = function ready(user) {
   // Called once the API SWF has loaded and is ready to accept method calls.
-
   // find the embed/object element
   apiswf = $('#apiswf').get(0);
 
@@ -73,7 +75,7 @@ callback_object.ready = function ready(user) {
     $('#nobody').show();
   }
 
-  console.log(user);
+  console.log('kyle');
 }
 
 callback_object.freeRemainingChanged = function freeRemainingChanged(remaining) {
@@ -84,6 +86,11 @@ callback_object.playStateChanged = function playStateChanged(playState) {
   // The playback state has changed.
   // The state can be: 0 - paused, 1 - playing, 2 - stopped, 3 - buffering or 4 - paused.
   $('#playState').text(playState);
+  if (playState == 0) {
+    console.log('paused')
+    $('#play').click(function() { apiswf.rdio_play(); });
+  }
+
 }
 
 callback_object.playingTrackChanged = function playingTrackChanged(playingTrack, sourcePosition) {
@@ -92,7 +99,7 @@ callback_object.playingTrackChanged = function playingTrackChanged(playingTrack,
   if (playingTrack != null) {
     $('#track').text(playingTrack['name']);
     $('#album').text(playingTrack['album']);
-    $('#artist').text(playingTrack['artist']);
+    $('#artist').text(playingTrack['artist'] + ' -');
     $('#art').attr('src', playingTrack['icon']);
   }
 }

@@ -9,7 +9,7 @@ $thumbwidth: 19.2%;
 
 
 * {
-	font-size: 98%;
+	font-size: 100%;
 	color: $white;
 	font-weight: 300;
 	font-family: Roboto Condensed, Arial Narrow;
@@ -46,12 +46,6 @@ h2 {
 	font-weight: 700;
 	margin: 0 0 $margin;
 	border-bottom: 2px solid $pink;
-}
-
-.btn {
-	border: 2px solid;
-	border-radius: 3px;
-	padding: 2%;
 }
 
 i {
@@ -105,22 +99,23 @@ div#masthead {
 	height: 50vh;
 	min-height: 400px;
 	max-height: 600px;
-	background: black;
 	ul {
-		position: relative;
-		list-style: none;
+		position: absolute;
 		overflow: hidden;
 		width: 100%;
 		height: 100%;
+		min-height: 400px;
+		max-height: 600px;
 		padding: 0;
 		margin: 0;
 		z-index: 1;
 		li {
 			-webkit-backface-visibility: hidden;
-			position: absolute;
-			display: none;
+			position: relative;
+			display: block;
 			width: 100%;
 			height: 100%;
+			float: left;
 			background-size: cover;
 			background-position: center;
 			left: 0;
@@ -141,13 +136,6 @@ div#masthead {
 			position: relative;
 			display: block;
 			float: left;
-		}
-		img {
-			display: block;
-			height: auto;
-			float: left;
-			width: 100%;
-			border: 0;
 		}
 	}
 }
@@ -197,10 +185,12 @@ div#content {
 					background-position: top;
 					margin: 0 1% 1% 0;
 					border: 2px solid $lightblue;
+					position: relative;
 					a {
 						display: block;
 						width: 100%;
 						height: 100%;
+						position: absolute;
 					} 
 				}
 				li:nth-child(5n) {
@@ -225,32 +215,30 @@ div#content {
 			}
 		}
 		div#playlist {
+			position: fixed;
+			width: 100%;
+			z-index: 2;
+			left: 0;
+			bottom: 0;
+			background: $pink;
+			padding: 2%;
+			#apiswf {
+				width: 0;
+				height: 0;
+			}
 			ul {
 				li {
-					padding: 1%;
-					font-size: 1.25em;
-					display: flex;
-					align-items: center;
-					a.play {
-						i {
-							font-size: 1.75em;
-							color: pink;
-						}
-					}
-					p {
+					display: inline-block;
+					h3 {
+						font-size: 2em;
 						font-style: italic;
-						margin: 0 0 0 1%;
 					}
-					a.buy{
-						text-align: right;
-						flex: 1;
-						font-size: .8em; 
-						transition: color .4s;
-						color: #ddd;
-						&:hover {
-							color: white;
-						}
-					}
+				}
+				li.btn {
+					background: $dark;
+					color: $white;
+					padding: 1% 2%;
+					cursor: pointer;
 				}
 			}
 		}
