@@ -9,8 +9,8 @@ $thumbwidth: 19.2%;
 
 
 * {
-	font-size: 98%;
-	color: $white;
+	font-size: 100%;
+	color: inherit;
 	font-weight: 300;
 	font-family: Roboto Condensed, Arial Narrow;
 	line-height: 1.5em;
@@ -26,13 +26,13 @@ $thumbwidth: 19.2%;
 
 body, html {
 	height: 100%;
-	// background: #afb5cb;
 }
 
 body {
 	background: url('../../assets/img/sitebg2.jpg') top no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	color: $white;
 }
 
 
@@ -46,12 +46,6 @@ h2 {
 	font-weight: 700;
 	margin: 0 0 $margin;
 	border-bottom: 2px solid $pink;
-}
-
-.btn {
-	border: 2px solid;
-	border-radius: 3px;
-	padding: 2%;
 }
 
 i {
@@ -105,22 +99,23 @@ div#masthead {
 	height: 50vh;
 	min-height: 400px;
 	max-height: 600px;
-	background: black;
 	ul {
-		position: relative;
-		list-style: none;
+		position: absolute;
 		overflow: hidden;
 		width: 100%;
 		height: 100%;
+		min-height: 400px;
+		max-height: 600px;
 		padding: 0;
 		margin: 0;
 		z-index: 1;
 		li {
 			-webkit-backface-visibility: hidden;
-			position: absolute;
-			display: none;
+			position: relative;
+			display: block;
 			width: 100%;
 			height: 100%;
+			float: left;
 			background-size: cover;
 			background-position: center;
 			left: 0;
@@ -141,13 +136,6 @@ div#masthead {
 			position: relative;
 			display: block;
 			float: left;
-		}
-		img {
-			display: block;
-			height: auto;
-			float: left;
-			width: 100%;
-			border: 0;
 		}
 	}
 }
@@ -197,10 +185,12 @@ div#content {
 					background-position: top;
 					margin: 0 1% 1% 0;
 					border: 2px solid $lightblue;
+					position: relative;
 					a {
 						display: block;
 						width: 100%;
 						height: 100%;
+						position: absolute;
 					} 
 				}
 				li:nth-child(5n) {
@@ -225,32 +215,30 @@ div#content {
 			}
 		}
 		div#playlist {
+			position: fixed;
+			width: 100%;
+			z-index: 2;
+			left: 0;
+			bottom: 0;
+			background: $pink;
+			padding: 2%;
+			#apiswf {
+				width: 0;
+				height: 0;
+			}
 			ul {
 				li {
-					padding: 1%;
-					font-size: 1.25em;
-					display: flex;
-					align-items: center;
-					a.play {
-						i {
-							font-size: 1.75em;
-							color: pink;
-						}
-					}
-					p {
+					display: inline-block;
+					h3 {
+						font-size: 2em;
 						font-style: italic;
-						margin: 0 0 0 1%;
 					}
-					a.buy{
-						text-align: right;
-						flex: 1;
-						font-size: .8em; 
-						transition: color .4s;
-						color: #ddd;
-						&:hover {
-							color: white;
-						}
-					}
+				}
+				li.btn {
+					background: $dark;
+					color: $white;
+					padding: 1% 2%;
+					cursor: pointer;
 				}
 			}
 		}
@@ -268,8 +256,7 @@ div#content {
 			}
 		}
 		div#quote p {
-			font-family: Radley;
-			font-style: italic;
+			font-family: Germania One;
 			font-weight: 400;
 			line-height: 1.1em;
 			font-size: 2.1em;
@@ -278,6 +265,31 @@ div#content {
 			border: dotted rgba(255,255,255,.25);
 			border-width: 1px 0;
 			padding: $margin;
+		}
+		div#listen {
+			background: rgba(255,0,153,.2);
+			margin: $margin 0;
+			padding: $margin;
+			color: $white;
+			// border-left: rgba(255,255,255,.5) solid 3px;
+			text-align: center;
+			h3 {
+				font-weight: 700;
+				font-size: 1.75rem;
+				line-height: 1em;
+				text-transform: uppercase;
+			}
+			p {
+				margin: 0;
+				i {
+					font-size: 4rem;
+					color: rgba(255,255,255,.75);
+
+				}
+			}
+			p:first-of-type {
+				margin: 0 0 $margin;
+			}
 		}
 	}
 }

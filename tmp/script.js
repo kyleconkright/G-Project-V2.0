@@ -1,26 +1,5 @@
 (function() {
   $(function() {
-    var itunes, song, songs, _i, _len;
-    songs = ['276460687', '504965130', '329093515', '203910723', '284193124', '331646673', '319100093', '721242118', '613132533', '402625405', '27910495', '152620650', '483670359', '321597782', '279264164', '309969982'];
-    itunes = function() {
-      return $.ajax({
-        url: "https://itunes.apple.com/lookup?id=" + song + "&entity=song&callback=?",
-        type: 'GET',
-        dataType: 'json',
-        success: function(data) {
-          return $('<li></li>').append('<a class="play" href="' + data.results[0].previewUrl + '"><i class="fa fa-play-circle-o"></i></a><p><span class="artist">' + data.results[0].artistName + '</span> - <span class="song">"' + data.results[0].trackName + '"</span></p><a class="buy" target="_blank" href="' + data.results[0].trackViewUrl + '"><i class="fa fa-apple"></i> iTunes</a>').appendTo('#playlist ul');
-        },
-        complete: function() {
-          return $('#playlist ul li:even').css({
-            'background': 'rgba(255,255,255,.1)'
-          });
-        }
-      });
-    };
-    for (_i = 0, _len = songs.length; _i < _len; _i++) {
-      song = songs[_i];
-      itunes(song);
-    }
     $.ajax({
       url: 'data/series.json',
       type: 'GET',
@@ -51,7 +30,7 @@
         });
       },
       complete: function() {
-        return $("#masthead ul").responsiveSlides();
+        return $("div#masthead ul").responsiveSlides();
       }
     });
   });
