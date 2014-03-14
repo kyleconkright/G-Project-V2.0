@@ -27,8 +27,12 @@ $(document).ready(function() {
 
   // on page load use SWFObject to load the API swf into div#apiswf
   var flashvars = {
-    'playbackToken': 'GAlNi78J_____zlyYWs5ZG02N2pkaHlhcWsyOWJtYjkyN2xvY2FsaG9zdEbwl7EHvbylWSWFWYMZwfc=', // from token.js
-    'domain': 'localhost',                // from token.js
+    // 'playbackToken': 'GAlNi78J_____zlyYWs5ZG02N2pkaHlhcWsyOWJtYjkyN2xvY2FsaG9zdEbwl7EHvbylWSWFWYMZwfc=', // from token.js
+    // 'domain': 'localhost',                // from token.js
+    // 'playbackToken': 'GBRTI1Iv_____2R2cHlzNHd5ZXg3Z2M0OXdoaDY3aHdrbmpheS5ncHJvamVjdGdlYXIuY29t9eNa8pbblsrNYbMatiADUg==',
+    // 'domain': 'jay.gprojectgear.com',
+    'playbackToken': 'GBFTI1Jp_____2R2cHlzNHd5ZXg3Z2M0OXdoaDY3aHdrbmt5bGVjb25rcmlnaHQuY29tBnm06OX9g2AX-TGaI5QJ1A==',
+    'domain': 'kyleconkright.com',
     'listener': 'callback_object'    // the global name of the object that will receive callbacks from the SWF
     };
   var params = {
@@ -41,15 +45,36 @@ $(document).ready(function() {
 
 
   // set up the controls
-  $('#play').click(function() {
-    apiswf.rdio_play('p8216387');
+
+  $('#playlist').hide();
+
+  $('#listen').click(function() {
+      $('#playlist').show()
+      apiswf.rdio_play('p8216387');  
   });
-  $('#stop').click(function() { apiswf.rdio_stop(); });
+
+  $('#play').click(function() {
+    console.log($('#playState').text())
+    if($('#playState').text() == 0) {
+      apiswf.rdio_play();
+      $('#play').html('<i class="fa fa-pause"></i>')
+    } else if($('#playState').text() == 5 || $('#playState').text() == 2) {
+      apiswf.rdio_play('p8216387');
+      $('#play').html('<i class="fa fa-pause"></i>')
+    } else if($('#playState').text() == 1) {
+      apiswf.rdio_pause();
+      $('#play').html('<i class="fa fa-play"></i>')
+    }
+  });
   $('#previous').click(function() { apiswf.rdio_previous(); });
   $('#next').click(function() { apiswf.rdio_next(); });
-  $('#pause').click(function() { apiswf.rdio_pause(); });
-  $('#resume').click(function() { apiswf.rdio_play(); });
-  $('#stop').click(function() { apiswf.rdio_stop(); });
+
+  $('#close').click(function() {
+      $('#playlist').slideUp();
+      $('#play').html('<i class="fa fa-play"></i>') 
+      apiswf.rdio_stop(); 
+  });
+
 });
 
 
@@ -78,22 +103,13 @@ callback_object.ready = function ready(user) {
   console.log('kyle');
 }
 
-callback_object.freeRemainingChanged = function freeRemainingChanged(remaining) {
-  $('#remaining').text(remaining);
-}
-
 callback_object.playStateChanged = function playStateChanged(playState) {
   // The playback state has changed.
   // The state can be: 0 - paused, 1 - playing, 2 - stopped, 3 - buffering or 4 - paused.
   $('#playState').text(playState);
-  if (playState == 0) {
-    console.log('paused')
-    $('#play').click(function() { apiswf.rdio_play(); });
-  }
-
 }
 
-callback_object.playingTrackChanged = function playingTrackChanged(playingTrack, sourcePosition) {
+callback_object.playingTrackChanged = function playingTrackChanged(playingTrack) {
   // The currently playing track has changed.
   // Track metadata is provided as playingTrack and the position within the playing source as sourcePosition.
   if (playingTrack != null) {
@@ -104,15 +120,6 @@ callback_object.playingTrackChanged = function playingTrackChanged(playingTrack,
   }
 }
 
-callback_object.playingSourceChanged = function playingSourceChanged(playingSource) {
-  // The currently playing source changed.
-  // The source metadata, including a track listing is inside playingSource.
-}
-
-
-callback_object.queueChanged = function queueChanged(newQueue) {
-  // The queue has changed to newQueue.
-}
 
 
 
