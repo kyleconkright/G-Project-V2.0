@@ -10,7 +10,7 @@ $thumbwidth: 19.2%;
 
 * {
 	font-size: 100%;
-	color: $white;
+	color: inherit;
 	font-weight: 300;
 	font-family: Roboto Condensed, Arial Narrow;
 	line-height: 1.5em;
@@ -26,13 +26,13 @@ $thumbwidth: 19.2%;
 
 body, html {
 	height: 100%;
-	// background: #afb5cb;
 }
 
 body {
 	background: url('../../assets/img/sitebg2.jpg') top no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	color: $white;
 }
 
 
@@ -256,8 +256,7 @@ div#content {
 			}
 		}
 		div#quote p {
-			font-family: Radley;
-			font-style: italic;
+			font-family: Germania One;
 			font-weight: 400;
 			line-height: 1.1em;
 			font-size: 2.1em;
@@ -266,6 +265,31 @@ div#content {
 			border: dotted rgba(255,255,255,.25);
 			border-width: 1px 0;
 			padding: $margin;
+		}
+		div#listen {
+			background: rgba(255,0,153,.2);
+			margin: $margin 0;
+			padding: $margin;
+			color: $white;
+			// border-left: rgba(255,255,255,.5) solid 3px;
+			text-align: center;
+			h3 {
+				font-weight: 700;
+				font-size: 1.75rem;
+				line-height: 1em;
+				text-transform: uppercase;
+			}
+			p {
+				margin: 0;
+				i {
+					font-size: 4rem;
+					color: rgba(255,255,255,.75);
+
+				}
+			}
+			p:first-of-type {
+				margin: 0 0 $margin;
+			}
 		}
 	}
 }
