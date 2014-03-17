@@ -220,25 +220,41 @@ div#content {
 			z-index: 2;
 			left: 0;
 			bottom: 0;
-			background: $pink;
-			padding: 2%;
+			background: rgba(20,20,20,.85);
+			text-align: center;
+			font-size: 1.5em;
 			#apiswf {
 				width: 0;
 				height: 0;
 			}
+			h3 {
+				font-style: italic;
+			}
 			ul {
 				li {
 					display: inline-block;
-					h3 {
-						font-size: 2em;
-						font-style: italic;
-					}
 				}
 				li.btn {
-					background: $dark;
 					color: $white;
-					padding: 1% 2%;
+					padding: 1% 0;
+					text-align: center;
+					width: 5%;
 					cursor: pointer;
+				}
+			}
+			#playState {
+				color: transparent;
+			}
+			#close {
+				color: $pink;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				cursor: pointer;
+				opacity: .75;
+				transition: opacity .5s;
+				&:hover {
+					opacity: 1;
 				}
 			}
 		}
@@ -271,8 +287,8 @@ div#content {
 			margin: $margin 0;
 			padding: $margin;
 			color: $white;
-			// border-left: rgba(255,255,255,.5) solid 3px;
 			text-align: center;
+			cursor: pointer;
 			h3 {
 				font-weight: 700;
 				font-size: 1.75rem;
