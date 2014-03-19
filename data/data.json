@@ -38,6 +38,7 @@
 						"video":
 							[
 								{ "url": "community-01.jpg", "rel":"02", "type":"clip", "caption":"Community" },
+								{ "url": "supernatural.jpg", "rel":"02", "type":"clip", "caption":"Supernatural" },
 								{ "url": "gigantic.jpg", "rel":"02", "type":"clip", "caption":"Gigantic" },
 								{ "url": "friends-kill.jpg", "rel":"02", "type":"clip", "caption":"Friends 4 Ever" },
 								{ "url": "made-01.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
@@ -47,7 +48,6 @@
 								{ "url": "made-05.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
 								{ "url": "made-06.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
 								{ "url": "myalibi-01.jpg", "rel":"02", "type":"clip", "caption":"My Alibi" },
-								{ "url": "supernatural.jpg", "rel":"02", "type":"clip", "caption":"Supernatural" },
 								{ "url": "subpranos-turkey.jpg", "rel":"02", "type":"clip", "caption":"The Subpranos" }
 							]
 						}
@@ -106,200 +106,100 @@
 								]
 							}
 					}
-				],
+			],
 
-				"resume":
-					[
-
-						{ 
-							"id":"01",
-							"title":"film",
-							"entries":
-								{
-								"entry":
-									[
-										{ "url": "01.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "02.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "03.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "04.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "05.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "06.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "07.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "08.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "09.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "10.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "11.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "12.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "13.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "14.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "15.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "16.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "17.jpg", "rel":"03", "caption":"caption placeholder" }
-									]
-								}
-						},
-
-						{ 
-							"id":"02",
-							"title":"television / internet",
-							"entries":
-								{
-								"entry":
-									[
-										{ "url": "01.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "02.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "03.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "04.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "05.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "06.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "07.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "08.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "09.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "10.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "11.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "12.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "13.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "14.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "15.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "16.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "17.jpg", "rel":"03", "caption":"caption placeholder" }
-									]
-								}
-						},
-
-						{ 
-							"id":"03",
-							"title":"theater",
-							"entries":
-								{
-								"entry":
-									[
-										{ "url": "01.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "02.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "03.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "04.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "05.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "06.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "07.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "08.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "09.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "10.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "11.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "12.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "13.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "14.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "15.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "16.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "17.jpg", "rel":"03", "caption":"caption placeholder" }
-									]
-								}
-						},
-						{ 
-							"id":"04",
-							"title":"training",
-							"entries":
-								{
-								"entry":
-									[
-										{ "url": "01.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "02.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "03.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "04.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "05.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "06.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "07.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "08.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "09.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "10.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "11.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "12.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "13.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "14.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "15.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "16.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "17.jpg", "rel":"03", "caption":"caption placeholder" }
-									]
-								}
-						},
-						{ 
-							"id":"05",
-							"title":"special skills",
-							"entries":
-								{
-								"entry":
-									[
-										{ "url": "01.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "02.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "03.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "04.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "05.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "06.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "07.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "08.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "09.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "10.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "11.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "12.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "13.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "14.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "15.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "16.jpg", "rel":"03", "caption":"caption placeholder" },
-										{ "url": "17.jpg", "rel":"03", "caption":"caption placeholder" }
-									]
-								}
-						}
-					],
-
-					"contacts":
-						[
-
-							{ 
-								"id":"01",
-								"title":"headshots",
-								"photoSet":
-									{
-									"photo":
-										[
-											{ "url": "01.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "02.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "03.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "04.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "05.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "06.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "07.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "08.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "09.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "10.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "11.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "12.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "13.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "14.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "15.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "16.jpg", "rel":"01", "caption":"caption placeholder" },
-											{ "url": "17.jpg", "rel":"01", "caption":"caption placeholder" }
-										]
-									}
-							},
-
-							{ 
-								"id":"02",
-								"title":"on set",
-								"photoSet":
-									{
-									"photo":
-										[
-											{ "url": "01.jpg", "rel":"02", "caption":"caption placeholder" },
-											{ "url": "02.jpg", "rel":"02", "caption":"caption placeholder" },
-											{ "url": "03.jpg", "rel":"02", "caption":"caption placeholder" },
-											{ "url": "04.jpg", "rel":"02", "caption":"caption placeholder" },
-											{ "url": "05.jpg", "rel":"02", "caption":"caption placeholder" },
-											{ "url": "06.jpg", "rel":"02", "caption":"caption placeholder" },
-											{ "url": "07.jpg", "rel":"02", "caption":"caption placeholder" },
-											{ "url": "08.jpg", "rel":"02", "caption":"caption placeholder" },
-											{ "url": "09.jpg", "rel":"02", "caption":"caption placeholder" }
-										]
-									}
+			"resume":
+				[
+					{
+						"id":"01",
+						"title":"film",
+						"entries": 
+							{
+							"entry":
+								[
+									{ "title": "Killing Poe", "role":"lead", "item":"Emeritus Productions", "rel":"01" },
+									{ "title": "Made... The Movie", "role":"lead", "item":"MTV Films", "rel":"01" },
+									{ "title": "Delusions of Love", "role":"lead", "item":"Dir. Brandon Hall", "rel":"01" },
+									{ "title": "Freeport", "role":"lead", "item":"Dir. Chris Mollica", "rel":"01" },
+									{ "title": "Loved Ones", "role":"lead", "item":"Dir. Charity Babcock" },
+									{ "title": "Edible Tees", "role":"lead", "item":"Dir. Eric Binns", "rel":"01" },
+									{ "title": "21 Tees", "role":"lead", "item":"Dir. Gary Cottie", "rel":"01" },
+									{ "title": "Winter and Spring", "role":"supporting", "item":"Dir. Kristian Gabriel", "rel":"01" }
+								]
 							}
-						]
+						
+					},
+
+					{
+						"id":"02",
+						"title":"television/internet",
+						"entries": 
+							{
+							"entry":
+								[
+									{ "title": "Glee", "role":"guest star", "item":"FOX", "rel":"02" },
+									{ "title": "Supernatural", "role":"guest star", "item":"CW", "rel":"02" },
+									{ "title": "Good Luck Charlie", "role":"recurring guest star", "item":"Disney", "rel":"02" },
+									{ "title": "Community", "role":"guest-star", "item":"NBC", "rel":"02" },
+									{ "title": "Switched at Birth", "role":"co-star", "item":"ABC Family", "rel":"02" },
+									{ "title": "Gigantic", "role":"guest star", "item":"Nickelodeon", "rel":"02" },
+									{ "title": "The Subpranos", "role":"lead / co-creator", "item":"thesubpranos.com", "rel":"02" },
+									{ "title": "A Marriage (pilot)", "role":"co-star", "item":"Dir. Marshall Herskovitz", "rel":"02" },
+									{ "title": "My Date (web series)", "role":"guest star", "item":"Disney", "rel":"02" },
+									{ "title": "Little Miss CEO", "role":"series regular", "item":"Dir. John Bowab", "rel":"02" },
+									{ "title": "Everybody Hates Chris", "role":"co-star", "item":"CW", "rel":"02" },
+									{ "title": "My Alibi (Web Series)", "role":"series regular", "item":"Disney (ABCfamily.com)", "rel":"02" }
+								]
+							}
+						
+					},
+
+					{
+						"id":"03",
+						"title":"theater",
+						"entries": 
+							{
+							"entry":
+								[
+									{ "title": "Sunset Heights", "role":"Improv Troupe", "item":"Improv Olympic", "rel":"03" },
+									{ "title": "Getting Out", "role":"Arlene", "item":"Underground Theatre", "rel":"03" },
+									{ "title": "Boomtown", "role":"Angela", "item":"DM Performing Arts Center", "rel":"03" },
+									{ "title": "Dracula", "role":"Mina", "item":"F.I.U. Main Stage", "rel":"03" },
+									{ "title": "Central Park West", "role":"Carol", "item":"Roxy Theatre", "rel":"03" }
+								]
+							}
+						
+					},
+
+					{
+						"id":"04",
+						"title":"training",
+						"entries": 
+							{
+							"entry":
+								[
+									{ "title": "Hollywood", "role":"lead", "item":"Dir. Davidson Cole", "rel":"04" },
+									{ "title": "Hollywood", "role":"lead", "item":"Dir. Davidson Cole", "rel":"04" }
+								]
+							}
+						
+					},
+
+					{
+						"id":"05",
+						"title":"special skills",
+						"entries": 
+							{
+							"entry":
+								[
+									{ "title": "Hollywood", "role":"lead", "item":"Dir. Davidson Cole", "rel":"05" },
+									{ "title": "Hollywood", "role":"lead", "item":"Dir. Davidson Cole", "rel":"05" }
+								]
+							}
+						
+					}
+				]
+
+
 	}	
 }

@@ -32,7 +32,10 @@
       dataType: 'json',
       success: function(results) {
         return $.each(results.response.resume, function() {
-          return $('<ul><h3>' + this.title + '</h3></ul>').append('').appendTo('#resume .holder');
+          $('<ul id="' + this.id + '"><h3>' + this.title + '</h3></ul>').appendTo('#resume .holder');
+          return $.each(this.entries.entry, function() {
+            return $('<li><div>' + this.title + '</div><div>' + this.role + '</div><div>' + this.item + '</div></li>').appendTo('#resume .holder ul#' + this.rel);
+          });
         });
       }
     });
