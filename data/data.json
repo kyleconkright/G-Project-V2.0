@@ -1,8 +1,47 @@
 {
 	"response": {
 
+		"nav": [
+				{
+					"id":"01",
+					"links":
+						[
+							{"link":"home", "val":"cyrina fiallo","href":"#"},
+							{"link":"videos", "val":"videos","href":"#videos"},
+							{"link":"photos", "val":"photos","href":"#photos"},
+							{"link":"home", "val":"cyrina fiallo","href":"#"},
+							{"link":"twitter", "val":"<i class=\"fa fa-twitter\"","href":"http://www.twitter.com/cyrinafiallo"},
+							{"link":"facebook", "val":"<i class=\"fa fa-facebook\"","href":"http://www.facebook.com/cyrinafiallo"},
+							{"link":"instagram", "val":"<i class=\"fa fa-instagram\"","href":"http://www.instagram.com/cyrinafiallo"}
+						]
+				}
+			],
+
 		"videos":
 			[
+
+				{ 
+					"id":"02",
+					"title":"clips",
+					"videoSet":
+						{
+						"video":
+							[
+								{ "url": "community-01.jpg", "rel":"02", "type":"clip", "caption":"Community" },
+								{ "url": "supernatural.jpg", "rel":"02", "type":"clip", "caption":"Supernatural" },
+								{ "url": "gigantic.jpg", "rel":"02", "type":"clip", "caption":"Gigantic" },
+								{ "url": "friends-kill.jpg", "rel":"02", "type":"clip", "caption":"Friends 4 Ever" },
+								{ "url": "made-01.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
+								{ "url": "made-02.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
+								{ "url": "made-03.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
+								{ "url": "made-04.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
+								{ "url": "made-05.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
+								{ "url": "made-06.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
+								{ "url": "myalibi-01.jpg", "rel":"02", "type":"clip", "caption":"My Alibi" },
+								{ "url": "subpranos-turkey.jpg", "rel":"02", "type":"clip", "caption":"The Subpranos" }
+							]
+						}
+				},
 
 				{ 
 					"id":"01",
@@ -26,29 +65,6 @@
 								{ "url": "target.jpg", "rel":"01", "type":"commercial", "caption":"Target" },
 								{ "url": "toyota.jpg", "rel":"01", "type":"commercial", "caption":"Toyota" },
 								{ "url": "zales.jpg", "rel":"01", "type":"commercial", "caption":"Zales" }
-							]
-						}
-				},
-
-				{ 
-					"id":"02",
-					"title":"clips",
-					"videoSet":
-						{
-						"video":
-							[
-								{ "url": "community-01.jpg", "rel":"02", "type":"clip", "caption":"Community" },
-								{ "url": "supernatural.jpg", "rel":"02", "type":"clip", "caption":"Supernatural" },
-								{ "url": "gigantic.jpg", "rel":"02", "type":"clip", "caption":"Gigantic" },
-								{ "url": "friends-kill.jpg", "rel":"02", "type":"clip", "caption":"Friends 4 Ever" },
-								{ "url": "made-01.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
-								{ "url": "made-02.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
-								{ "url": "made-03.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
-								{ "url": "made-04.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
-								{ "url": "made-05.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
-								{ "url": "made-06.jpg", "rel":"02", "type":"clip", "caption":"Made: The Movie" },
-								{ "url": "myalibi-01.jpg", "rel":"02", "type":"clip", "caption":"My Alibi" },
-								{ "url": "subpranos-turkey.jpg", "rel":"02", "type":"clip", "caption":"The Subpranos" }
 							]
 						}
 				}
