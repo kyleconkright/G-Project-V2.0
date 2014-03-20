@@ -1,5 +1,19 @@
 $ ->
 
+	$.ajax
+		url: 'data/data.json'
+		type: 'GET'
+		dataType: 'json'
+		success: (results) ->
+			$('<ul id="menu"></ul>').appendTo('div.section div')
+			$.each results.response.nav.links, ->
+				$('<li></li>')
+				.append('<a href="' + this.href + '">' + this.val + '</a>')
+				.appendTo('div.section div ul#menu')
+
+
+
+
 	# $.ajax
 	# 	url: 'data/data.json'
 	# 	type: 'GET'
