@@ -1,19 +1,19 @@
 // VARIABLES
 $margin: 16px;
+$light: #ededed;
 $white:  #f6f6f6;
-$pink: pink;
+$pink: #f1a1b3;
 $lightblue: lightblue;
 $dark: #26272b;
 
-$thumbwidth: 19.2%;
 
 
 * {
-	font-size: 100%;
+	font-size: 103%;
 	color: inherit;
-	font-weight: 300;
-	font-family: Roboto Condensed, Arial Narrow;
-	line-height: 1.5em;
+	font-weight: 400;
+	font-family: Playfair Display, georgia;
+	line-height: 1.25em;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -29,126 +29,52 @@ body, html {
 }
 
 body {
-	background: url('../../assets/img/sitebg2.jpg') top no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	color: $white;
+	color: $dark;
 }
 
+h1, h2 {
+	font-weight: 900;
+	font-style: italic;
+}
 
-
-
-// ------------------------------- UNIVERSAL
+h1 {
+	font-size: 3rem;
+	letter-spacing: .02em;
+}
 
 h2 {
+	font-size: 2.25rem;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 1.25rem;
 	text-transform: uppercase;
-	font-size: 1.9em;
-	font-weight: 700;
-	margin: 0 0 $margin;
-	border-bottom: 2px solid $pink;
+	letter-spacing: .25em;
 }
 
-i {
-	color: inherit;
-	font-size: inherit;
+.btn {
+	border: 2px solid $white;
+	border-radius: 3px;
+	padding: .75% 1.25%;
+	font-family: roboto condensed;
+	font-size: .8em;
+	transform: background .2s;
+	&:hover {
+		background: $white;
+		color: $dark;
+	}
 }
 
 
-// ------------------------------- LAYOUT
+
+// LAYOUT **************************************************
+
 
 div#container {
-	height: 100%;
-	max-width: 1920px;
+	max-width: 1800px;
 	margin: 0 auto;
-}
-
-nav {
-	position: absolute;
-	z-index: 2;
-	width: 100%;
-	max-width: 1920px;
-	ul {
-		display: flex;
-		padding: 2%;
-		li {
-			display: flex;
-			flex: 1;
-			align-items: top;
-			height: 50px;
-			img {
-				height: 30px;
-			}
-		}
-		li:last-of-type {
-			justify-content: flex-end;
-			a {
-				text-transform: uppercase;
-				font-size: .9em;
-				font-style: italic;
-				text-align: center;
-				img {
-					height: 20px;
-				}
-			}
-		} 
-	}
-}
-
-div#masthead {
-	position: relative;
-	height: 50vh;
-	min-height: 400px;
-	max-height: 600px;
-	ul {
-		position: absolute;
-		overflow: hidden;
-		width: 100%;
-		height: 100%;
-		min-height: 400px;
-		max-height: 600px;
-		padding: 0;
-		margin: 0;
-		z-index: 1;
-		li {
-			-webkit-backface-visibility: hidden;
-			position: relative;
-			display: block;
-			width: 100%;
-			height: 100%;
-			float: left;
-			background-size: cover;
-			background-position: center;
-			left: 0;
-			top: 0;
-			div {
-				position: absolute;
-				bottom: 2%;
-				right: 2%;
-
-				p {
-					// flex: 1;
-					font-style: italic;
-					text-align: right;
-				}
-			}
-		}
-		li:first-child {
-			position: relative;
-			display: block;
-			float: left;
-		}
-	}
-}
-
-
-div#content {
-	display: flex;
-	padding: 2%;
-	// background: url('../../assets/img/sitebg2.jpg') top no-repeat;
-	// background-size: cover;
-	// background-attachment: fixed;
-	max-width: 1440px;
-	margin: 0 auto;
+<<<<<<< HEAD
 	> div {
 		padding: 2%;
 	}
@@ -240,6 +166,24 @@ div#content {
 					text-align: center;
 					width: 5%;
 					cursor: pointer;
+=======
+	display:flex;
+	flex-direction: column; 
+	div.section {
+		min-height: 500px;
+		div {
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			ul#menu {
+				flex: 1;
+				text-align: right;
+				font-style: italic;
+				li {
+					display: inline-block;
+					margin: 0 0 0 10px;
+>>>>>>> FETCH_HEAD
 				}
 			}
 			#playState {
@@ -259,6 +203,7 @@ div#content {
 			}
 		}
 	}
+<<<<<<< HEAD
 	div#sidebar {
 		flex: 1;
 		// text-align: right;
@@ -307,36 +252,19 @@ div#content {
 				margin: 0 0 $margin;
 			}
 		}
+=======
+	div#header {
+		min-height: 100vh;
+		max-height: 800px;
+		background: url('../../assets/img/headerbg.jpg') center no-repeat;
+		background-size: cover;
+>>>>>>> FETCH_HEAD
+	}
+	div#resume {
+		background: $dark;
+		color: $white;
 	}
 }
-
-footer {
-	height: 20vh;
-	min-height: 200px;
-	max-height: 400px;
-	background: $dark;
-	display: flex;
-	padding: $margin;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	img:last-of-type {
-		height: 25px;
-		// margin: $margin 0 0 0;
-	}
-	a:last-of-type {
-		margin: $margin 0 0;
-		font-size: .8em;
-		opacity: .5;
-		font-style: italic;
-		text-transform: uppercase;
-	}
-}
-
-
-
-
-
 
 
 

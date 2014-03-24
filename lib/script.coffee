@@ -1,43 +1,47 @@
 $ ->
 
-
 	$.ajax
-		url: 'data/series.json'
+		url: 'data/data.json'
 		type: 'GET'
 		dataType: 'json'
 		success: (results) ->
-			$.each results.response.seriesList, ->
-				$('<div class="seriesInfo" id="gallery-title">
-						<h2>' + this.title + '</h2>
-						<span class="share">
-							<a href="http://twitter.com/share?url=http%3A%2F%2Fjay.gprojectgear.com%2F%23' + this.id + '" target="_blank"><i class="fa fa-twitter"></i></a>
-							<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[summary]=Stream%20Eric%20Hutchinson%27s%20New%20Single%20%22TELL%20THE%20WORLD%22&p[url]=http%3A%2F%2Fjay.gprojectgear.com%2F%23' + this.id + '" target="_blank"><i class="fa fa-facebook"></i></a>
-							<a href="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fjay.gprojectgear.com%2F%23' + this.id + '&media=http%3A%2F%2Fkyleconkright.com/jay/assets/series/' + this.id + '/' + this.photoSet.photo[0].url + '&description=' + this.title + '" target="_blank"><i class="fa fa-pinterest"></i></a>
-						</span>
-					</div>
-					<ul class="seriesPhotos" id="' + this.id + '"></ul>')
-				.appendTo('#gallery')
-				$.each this.photoSet.photo, ->
-					$('<li class="photo" style="background-image: url(assets/series/' + this.rel + '/' + this.url + ');"><a href="assets/series/'+ this.rel + '/' + this.url + '" data-lightbox-gallery="' + this.rel + '" title="' + this.caption + '"></a></li>')
-					.appendTo('div#gallery ul#' + this.rel)
-		complete: ->
-			$('#gallery ul li a').nivoLightbox({
-				theme: 'default',
-				keyboardNav: true,
-				clickOverlayToClose: true
-				})
+			$('<ul id="menu"></ul>').appendTo('div.section div')
+			$.each results.response.nav.links, ->
+				$('<li></li>')
+				.append('<a href="' + this.href + '">' + this.val + '</a>')
+				.appendTo('div.section div ul#menu')
 
-			
 
-	$.ajax
-		url: 'data/series.json'
-		type: 'GET'
-		dataType: 'json'
-		success: (results) ->
-			$.each results.response.masthead, ->
-				$('<li style="background-image: url(assets/series/' + this.id + '/' + this.mastPhoto + ');"><div class="mastcaption"><p>' + this.title + '</p></div></li>').appendTo('#masthead ul')
-		complete: ->
-			$("div#masthead ul").responsiveSlides()
 
-	
 
+	# $.ajax
+	# 	url: 'data/data.json'
+	# 	type: 'GET'
+	# 	dataType: 'json'
+	# 	success: (results) ->
+	# 		$.each results.response.videos, ->
+	# 			$('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('#videos')
+	# 			$.each this.videoSet.video, ->
+	# 				$('<li><div class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="#"><i class="fa fa-play-circle"></i></a></div><p class="caption">' + this.caption + '</p></li>').append('').appendTo('#videos ul#' + this.rel)
+
+
+	# $.ajax
+	# 	url: 'data/data.json'
+	# 	type: 'GET'
+	# 	dataType: 'json'
+	# 	success: (results) ->
+	# 		$.each results.response.photos, ->
+	# 			$('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('#photos')
+	# 			$.each this.photoSet.photo, ->
+	# 				$('<li><div class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="#"></a></div></li>').append('').appendTo('#photos ul#' + this.rel)
+
+
+	# $.ajax
+	# 	url: 'data/data.json'
+	# 	type: 'GET'
+	# 	dataType: 'json'
+	# 	success: (results) ->
+	# 		$.each results.response.resume, ->
+	# 			$('<ul id="' + this.id + '"><h3>' + this.title + '</h3></ul>').appendTo('#resume .holder')
+	# 			$.each this.entries.entry, ->
+	# 				$('<li><div>' + this.title + '</div><div>' + this.role + '</div><div>' + this.item + '</div></li>').appendTo('#resume .holder ul#' + this.rel)

@@ -1,0 +1,16 @@
+{
+	"response": {
+		"nav": {
+			"links":
+				[
+					{"title":"videos", "val":"videos","href":"#videos"},
+					{"title":"photos", "val":"photos","href":"#photos"},
+					{"title":"bio", "val":"bio","href":"#bio"},
+					{"title":"resume", "val":"resume","href":"#resume"},
+					{"title":"twitter", "val":"<i class=\"fa fa-twitter\">","href":"http://www.twitter.com/cyrinafiallo"},
+					{"title":"facebook", "val":"<i class=\"fa fa-facebook\">","href":"http://www.facebook.com/cyrinafiallo"},
+					{"title":"instagram", "val":"<i class=\"fa fa-instagram\">","href":"http://www.instagram.com/cyrinafiallo"}
+				]
+		}
+	}
+}
