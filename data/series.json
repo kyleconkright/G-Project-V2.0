@@ -35,23 +35,23 @@
 						{
 						"photo":
 							[
-								{ "url": "01.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "02.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "03.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "04.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "05.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "06.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "07.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "08.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "09.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "10.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "11.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "12.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "13.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "14.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "15.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "16.jpg", "rel":"03", "caption":"caption placeholder" },
-								{ "url": "17.jpg", "rel":"03", "caption":"caption placeholder" }
+								{ "url": "01.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (1)" },
+								{ "url": "02.jpg", "rel":"03", "caption":"Palapa at sunset. Punta Burros, Mexico." },
+								{ "url": "03.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (2)" },
+								{ "url": "04.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (3)" },
+								{ "url": "05.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (4)" },
+								{ "url": "06.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (5)" },
+								{ "url": "07.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (6)" },
+								{ "url": "08.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (7)" },
+								{ "url": "09.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (8)" },
+								{ "url": "10.jpg", "rel":"03", "caption":"G-GRIP bluetooth wireless speaker (1)" },
+								{ "url": "11.jpg", "rel":"03", "caption":"G-GRIP bluetooth wireless speaker (2)" },
+								{ "url": "12.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (9)" },
+								{ "url": "13.jpg", "rel":"03", "caption":"Ed Fladung surfing in Punta Burros, Mexico. (1)" },
+								{ "url": "14.jpg", "rel":"03", "caption":"Quality Peoples (toes). Bunta Burros, Mexico." },
+								{ "url": "15.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (10)" },
+								{ "url": "16.jpg", "rel":"03", "caption":"Ed Fladung surfing in Punta Burros, Mexico. (2)" },
+								{ "url": "17.jpg", "rel":"03", "caption":"Surfing a log. Bunta Burros, Mexico." }
 							]
 						}
 				},
@@ -63,15 +63,15 @@
 						{
 						"photo":
 							[
-								{ "url": "01.jpg", "rel":"02", "caption":"caption placeholder" },
-								{ "url": "02.jpg", "rel":"02", "caption":"caption placeholder" },
-								{ "url": "03.jpg", "rel":"02", "caption":"caption placeholder" },
-								{ "url": "04.jpg", "rel":"02", "caption":"caption placeholder" },
-								{ "url": "05.jpg", "rel":"02", "caption":"caption placeholder" },
-								{ "url": "06.jpg", "rel":"02", "caption":"caption placeholder" },
-								{ "url": "07.jpg", "rel":"02", "caption":"caption placeholder" },
-								{ "url": "08.jpg", "rel":"02", "caption":"caption placeholder" },
-								{ "url": "09.jpg", "rel":"02", "caption":"caption placeholder" }
+								{ "url": "01.jpg", "rel":"02", "caption":"Evelyn May Abad gearing up for her skate session. (1)" },
+								{ "url": "02.jpg", "rel":"02", "caption":"Evelyn May Abad gearing up for her skate session. (2)" },
+								{ "url": "03.jpg", "rel":"02", "caption":"Evelyn May Abad gearing up for her skate session. (3)" },
+								{ "url": "04.jpg", "rel":"02", "caption":"Evelyn May Abad gearing up for her skate session. (4)" },
+								{ "url": "05.jpg", "rel":"02", "caption":"Skate session with the G-ZIP. (1)" },
+								{ "url": "06.jpg", "rel":"02", "caption":"Skate session with the G-ZIP. (2)" },
+								{ "url": "07.jpg", "rel":"02", "caption":"Evelyn May Abad, boardslide at Lake Cunningham Skatepark. (1)" },
+								{ "url": "08.jpg", "rel":"02", "caption":"Evelyn May Abad, boardslide at Lake Cunningham Skatepark. (2)" },
+								{ "url": "09.jpg", "rel":"02", "caption":"Portrait of Evelyn May Abad at the Skull Bowl." }
 							]
 						}
 				},
@@ -84,20 +84,20 @@
 						{
 						"photo":
 							[
-								{ "url": "01.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "02.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "03.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "04.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "05.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "06.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "07.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "08.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "09.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "10.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "11.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "12.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "13.jpg", "rel":"01", "caption":"caption placeholder" },
-								{ "url": "14.jpg", "rel":"01", "caption":"caption placeholder" }
+								{ "url": "01.jpg", "rel":"01", "caption":"Tommy Romero, Justin Knowles surfing Waddell Creek, CA. (1)" },
+								{ "url": "02.jpg", "rel":"01", "caption":"Surfer Justin Knowles at Waddell Creek, CA. (1)" },
+								{ "url": "03.jpg", "rel":"01", "caption":"G-GRIP at Waddell Creek, CA. (1)" },
+								{ "url": "04.jpg", "rel":"01", "caption":"Surfer Tommy Romero at Waddell Creek, CA. (1)" },
+								{ "url": "05.jpg", "rel":"01", "caption":"Surfer Justin Knowles at Waddell Creek, CA. (2)" },
+								{ "url": "06.jpg", "rel":"01", "caption":"Surfer Tommy Romero at Waddell Creek, CA." },
+								{ "url": "07.jpg", "rel":"01", "caption":"G-GO product at Waddell Creek, CA." },
+								{ "url": "08.jpg", "rel":"01", "caption":"Surfer Justin Knowles at Waddell Creek, CA" },
+								{ "url": "09.jpg", "rel":"01", "caption":"Tommy Romero, Justin Knowles surfing Waddell Creek, CA. (2)" },
+								{ "url": "10.jpg", "rel":"01", "caption":"Tommy Romero, Justin Knowles surfing Waddell Creek, CA. (3)" },
+								{ "url": "11.jpg", "rel":"01", "caption":"G-GRIP at Waddell Creek, CA. (2)" },
+								{ "url": "12.jpg", "rel":"01", "caption":"Surf session with the G-GRIP." },
+								{ "url": "13.jpg", "rel":"01", "caption":"Surfer Tommy Romero at Waddell Creek, CA. (2)" },
+								{ "url": "14.jpg", "rel":"01", "caption":"Surfer Tommy Romero with G-GO" }
 							]
 						}
 				}
