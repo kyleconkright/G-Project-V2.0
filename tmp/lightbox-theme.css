@@ -59,6 +59,14 @@
 	font-size: .8em;
 }
 
+.nivo-lightbox-title ~ a i.fa-pinterest {
+	color: #CB2027;
+}
+
+.nivo-lightbox-title ~ a i.fa-facebook-square {
+	color: #44619d;
+}
+
 .nivo-lightbox-theme-default .nivo-lightbox-image img {
 	border: 40px solid #eee;
 	background: #fff;
