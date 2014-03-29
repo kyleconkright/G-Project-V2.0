@@ -21,8 +21,15 @@ module.exports = function(grunt) {
                 }
             }
         },
+        cssmin: {
+          	combine: {
+            	files: {
+              		'build/css/vendor.css': ['tmp/lightbox.css', 'tmp/lightbox-theme.css']
+            	}
+          	}
+        },
         coffee: {
-          compile: {
+          	compile: {
 	            files: {
 	              	'tmp/script.js': 'lib/script.coffee'
 	            }
@@ -31,7 +38,7 @@ module.exports = function(grunt) {
       	uglify: {
       		my_target: {
       		    files: {
-      		    	'build/js/vendor.min.js': ['lib/vendor/jquery.js','lib/vendor/lightbox.js','lib/vendor/slides.js'],
+      		    	'build/js/vendor.min.js': ['lib/vendor/jquery.js','lib/vendor/lightbox.js','lib/vendor/slides.js','lib/vendor/hello.js'],
       		    	'build/js/script.min.js': 'tmp/script.js'
       		    }
       		}
@@ -73,9 +80,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify','sass','autoprefixer','coffee','watch','imagemin']);
+  grunt.registerTask('default', ['uglify','sass','autoprefixer','coffee','watch','imagemin','cssmin']);
 
 
 };

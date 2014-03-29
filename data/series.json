@@ -5,7 +5,7 @@
 			[
 				{
 					"id":"03",
-					"title":"Quality Peoples in Punta Mita, Mexico",
+					"title":"Quality Peoples in Punta Burros, Mexico",
 					"mastPhoto":"masthead.jpg",
 					"titlePhoto":"title.svg"
 				},
@@ -30,28 +30,28 @@
 
 				{ 
 					"id":"03",
-					"title":"Series 03: Quality Peoples in Punta Mita, Mexico",
+					"title":"Series 03: Quality Peoples in Punta Burros, Mexico",
 					"photoSet":
 						{
 						"photo":
 							[
-								{ "url": "01.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (1)" },
+								{ "url": "01.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (1)" },
 								{ "url": "02.jpg", "rel":"03", "caption":"Palapa at sunset. Punta Burros, Mexico." },
-								{ "url": "03.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (2)" },
-								{ "url": "04.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (3)" },
-								{ "url": "05.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (4)" },
-								{ "url": "06.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (5)" },
-								{ "url": "07.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (6)" },
-								{ "url": "08.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (7)" },
-								{ "url": "09.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (8)" },
+								{ "url": "03.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (2)" },
+								{ "url": "04.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (3)" },
+								{ "url": "05.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (4)" },
+								{ "url": "06.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (5)" },
+								{ "url": "07.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (6)" },
+								{ "url": "08.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (7)" },
+								{ "url": "09.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (8)" },
 								{ "url": "10.jpg", "rel":"03", "caption":"G-GRIP bluetooth wireless speaker (1)" },
 								{ "url": "11.jpg", "rel":"03", "caption":"G-GRIP bluetooth wireless speaker (2)" },
-								{ "url": "12.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (9)" },
+								{ "url": "12.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (9)" },
 								{ "url": "13.jpg", "rel":"03", "caption":"Ed Fladung surfing in Punta Burros, Mexico. (1)" },
-								{ "url": "14.jpg", "rel":"03", "caption":"Quality Peoples (toes). Bunta Burros, Mexico." },
-								{ "url": "15.jpg", "rel":"03", "caption":"Ed Fladung of Qualty Peoples. Punta Burros, Mexico. (10)" },
+								{ "url": "14.jpg", "rel":"03", "caption":"Quality Peoples (toes). Punta Burros, Mexico." },
+								{ "url": "15.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (10)" },
 								{ "url": "16.jpg", "rel":"03", "caption":"Ed Fladung surfing in Punta Burros, Mexico. (2)" },
-								{ "url": "17.jpg", "rel":"03", "caption":"Surfing a log. Bunta Burros, Mexico." }
+								{ "url": "17.jpg", "rel":"03", "caption":"Surfing a log. Punta Burros, Mexico." }
 							]
 						}
 				},
