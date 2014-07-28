@@ -27,6 +27,39 @@
 
 		"seriesList":
 			[
+				{ 
+					"id":"04",
+					"title":"Series 04: Jen + Devin",
+					"photoSet":
+						{
+						"photo":
+							[
+								{ "url": "01.jpg", "rel":"04", "caption":"Jen Valenzuela carves a California gem." },
+								{ "url": "02.jpg", "rel":"04", "caption":"Devin brings speed and lines to any pool he touches." },
+								{ "url": "03.jpg", "rel":"04", "caption":"Jen Valenzuela, frontside wall ride at a classic Northern California pool." },
+								{ "url": "04.jpg", "rel":"04", "caption":"Jen Valenzuela, frontside wall ride. Northern California pool." },
+								{ "url": "05.jpg", "rel":"04", "caption":"Devin Scott checks the drop from the corner." },
+								{ "url": "06.jpg", "rel":"04", "caption":"Devin, dropping in. Northern California pool." },
+								{ "url": "07.jpg", "rel":"04", "caption":"Devin dropping in. Northern California pool." },
+								{ "url": "08.jpg", "rel":"04", "caption":"Devin over the stairs (third time's a charm). Northern California pool." },
+								{ "url": "09.jpg", "rel":"04", "caption":"Waylon Jennings anyone? Devin with the G-Boom." },
+								{ "url": "10.jpg", "rel":"04", "caption":"Devin with the G-BOOM." },
+								{ "url": "11.jpg", "rel":"04", "caption":"Jen, carving walls. Northern California pool." },
+								{ "url": "12.jpg", "rel":"04", "caption":"Jen Valenzuela skating a classic Northern California pool." },
+								{ "url": "13.jpg", "rel":"04", "caption":"California skateboarding lifestyle for G-Project Gear" },
+								{ "url": "14.jpg", "rel":"04", "caption":"Jen Valenzuela" },
+								{ "url": "15.jpg", "rel":"04", "caption":"Jen Valenzuela. Northern California pool." },
+								{ "url": "16.jpg", "rel":"04", "caption":"Jen Valenzuela. G-BOOM" },
+								{ "url": "18.jpg", "rel":"04", "caption":"Portrait of Jen Valenzuela + Devin Scott. Northern California pool." },
+								{ "url": "19.jpg", "rel":"04", "caption":"Portrait of Devin Scott" },
+								{ "url": "20.jpg", "rel":"04", "caption":"Portrait of Devin Scott" },
+								{ "url": "21.jpg", "rel":"04", "caption":"Devin, backside grind. Northern California pool." },
+								{ "url": "22.jpg", "rel":"04", "caption":"Jen Valenzuela. Northern California pool." },
+								{ "url": "23.jpg", "rel":"04", "caption":"Jen. A POV shot while carving." },
+								{ "url": "24.jpg", "rel":"04", "caption":"Devin, frontside grind. Northern California pool." }
+							]
+						}
+				},
 
 				{ 
 					"id":"03",
