@@ -39,5 +39,15 @@ $ ->
 		complete: ->
 			$("div#masthead ul").responsiveSlides()
 
+
+
+	if document.referrer.indexOf('gprojectgear') isnt -1
+		$('a.back span').text('back to site')
+		$('a.back').on 'click', ->
+			parent.history.back()
+			return false
+	else
+		$('a.back span')
+			.text('continue to G-Project')
 	
 

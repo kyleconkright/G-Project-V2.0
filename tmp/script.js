@@ -20,7 +20,7 @@
         });
       }
     });
-    return $.ajax({
+    $.ajax({
       url: 'data/series.json',
       type: 'GET',
       dataType: 'json',
@@ -33,6 +33,15 @@
         return $("div#masthead ul").responsiveSlides();
       }
     });
+    if (document.referrer.indexOf('gprojectgear') !== -1) {
+      $('a.back span').text('back to site');
+      return $('a.back').on('click', function() {
+        parent.history.back();
+        return false;
+      });
+    } else {
+      return $('a.back span').text('continue to G-Project');
+    }
   });
 
 }).call(this);

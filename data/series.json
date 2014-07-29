@@ -5,14 +5,13 @@
 			[
 				{
 					"id":"03",
-					"title":"Quality Peoples in Punta Burros, Mexico",
+					"title":"Jen + Devin at Northern California pool",
 					"mastPhoto":"masthead.jpg",
 					"titlePhoto":"title.svg"
 				},
-
 				{
 					"id":"02",
-					"title":"Evelyn at the Skate Park",
+					"title":"Quality Peoples in Punta Burros, Mexico",
 					"mastPhoto":"masthead.jpg",
 					"titlePhoto":"title.svg"
 				},
@@ -28,86 +27,67 @@
 		"seriesList":
 			[
 				{ 
-					"id":"04",
-					"title":"Series 04: Jen + Devin",
-					"photoSet":
-						{
-						"photo":
-							[
-								{ "url": "01.jpg", "rel":"04", "caption":"Jen Valenzuela carves a California gem." },
-								{ "url": "02.jpg", "rel":"04", "caption":"Devin brings speed and lines to any pool he touches." },
-								{ "url": "03.jpg", "rel":"04", "caption":"Jen Valenzuela, frontside wall ride at a classic Northern California pool." },
-								{ "url": "04.jpg", "rel":"04", "caption":"Jen Valenzuela, frontside wall ride. Northern California pool." },
-								{ "url": "05.jpg", "rel":"04", "caption":"Devin Scott checks the drop from the corner." },
-								{ "url": "06.jpg", "rel":"04", "caption":"Devin, dropping in. Northern California pool." },
-								{ "url": "07.jpg", "rel":"04", "caption":"Devin dropping in. Northern California pool." },
-								{ "url": "08.jpg", "rel":"04", "caption":"Devin over the stairs (third time's a charm). Northern California pool." },
-								{ "url": "09.jpg", "rel":"04", "caption":"Waylon Jennings anyone? Devin with the G-Boom." },
-								{ "url": "10.jpg", "rel":"04", "caption":"Devin with the G-BOOM." },
-								{ "url": "11.jpg", "rel":"04", "caption":"Jen, carving walls. Northern California pool." },
-								{ "url": "12.jpg", "rel":"04", "caption":"Jen Valenzuela skating a classic Northern California pool." },
-								{ "url": "13.jpg", "rel":"04", "caption":"California skateboarding lifestyle for G-Project Gear" },
-								{ "url": "14.jpg", "rel":"04", "caption":"Jen Valenzuela" },
-								{ "url": "15.jpg", "rel":"04", "caption":"Jen Valenzuela. Northern California pool." },
-								{ "url": "16.jpg", "rel":"04", "caption":"Jen Valenzuela. G-BOOM" },
-								{ "url": "18.jpg", "rel":"04", "caption":"Portrait of Jen Valenzuela + Devin Scott. Northern California pool." },
-								{ "url": "19.jpg", "rel":"04", "caption":"Portrait of Devin Scott" },
-								{ "url": "20.jpg", "rel":"04", "caption":"Portrait of Devin Scott" },
-								{ "url": "21.jpg", "rel":"04", "caption":"Devin, backside grind. Northern California pool." },
-								{ "url": "22.jpg", "rel":"04", "caption":"Jen Valenzuela. Northern California pool." },
-								{ "url": "23.jpg", "rel":"04", "caption":"Jen. A POV shot while carving." },
-								{ "url": "24.jpg", "rel":"04", "caption":"Devin, frontside grind. Northern California pool." }
-							]
-						}
-				},
-
-				{ 
 					"id":"03",
-					"title":"Series 03: Quality Peoples in Punta Burros, Mexico",
+					"title":"Series 03: Jen + Devin at Northern California pool",
 					"photoSet":
 						{
 						"photo":
 							[
-								{ "url": "01.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (1)" },
-								{ "url": "02.jpg", "rel":"03", "caption":"Palapa at sunset. Punta Burros, Mexico." },
-								{ "url": "03.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (2)" },
-								{ "url": "04.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (3)" },
-								{ "url": "05.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (4)" },
-								{ "url": "06.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (5)" },
-								{ "url": "07.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (6)" },
-								{ "url": "08.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (7)" },
-								{ "url": "09.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (8)" },
-								{ "url": "10.jpg", "rel":"03", "caption":"G-GRIP bluetooth wireless speaker (1)" },
-								{ "url": "11.jpg", "rel":"03", "caption":"G-GRIP bluetooth wireless speaker (2)" },
-								{ "url": "12.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (9)" },
-								{ "url": "13.jpg", "rel":"03", "caption":"Ed Fladung surfing in Punta Burros, Mexico. (1)" },
-								{ "url": "14.jpg", "rel":"03", "caption":"Quality Peoples (toes). Punta Burros, Mexico." },
-								{ "url": "15.jpg", "rel":"03", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (10)" },
-								{ "url": "16.jpg", "rel":"03", "caption":"Ed Fladung surfing in Punta Burros, Mexico. (2)" },
-								{ "url": "17.jpg", "rel":"03", "caption":"Surfing a log. Punta Burros, Mexico." }
+								{ "url": "01.jpg", "rel":"03", "caption":"Jen Valenzuela carves a California gem." },
+								{ "url": "02.jpg", "rel":"03", "caption":"Devin brings speed and lines to any pool he touches." },
+								{ "url": "03.jpg", "rel":"03", "caption":"Jen Valenzuela, frontside wall ride at a classic Northern California pool." },
+								{ "url": "04.jpg", "rel":"03", "caption":"Jen Valenzuela, frontside wall ride. Northern California pool." },
+								{ "url": "05.jpg", "rel":"03", "caption":"Devin Scott checks the drop from the corner." },
+								{ "url": "06.jpg", "rel":"03", "caption":"Devin, dropping in. Northern California pool." },
+								{ "url": "07.jpg", "rel":"03", "caption":"Devin dropping in. Northern California pool." },
+								{ "url": "08.jpg", "rel":"03", "caption":"Devin over the stairs (third time's a charm). Northern California pool." },
+								{ "url": "09.jpg", "rel":"03", "caption":"Waylon Jennings anyone? Devin with the G-BOOM." },
+								{ "url": "10.jpg", "rel":"03", "caption":"Devin with the G-BOOM." },
+								{ "url": "11.jpg", "rel":"03", "caption":"Jen, carving walls. Northern California pool." },
+								{ "url": "12.jpg", "rel":"03", "caption":"Jen Valenzuela skating a classic Northern California pool." },
+								{ "url": "13.jpg", "rel":"03", "caption":"California skateboarding lifestyle for G-Project Gear" },
+								{ "url": "14.jpg", "rel":"03", "caption":"Jen Valenzuela" },
+								{ "url": "15.jpg", "rel":"03", "caption":"Jen Valenzuela. Northern California pool." },
+								{ "url": "16.jpg", "rel":"03", "caption":"Jen Valenzuela. G-BOOM" },
+								{ "url": "18.jpg", "rel":"03", "caption":"Portrait of Jen Valenzuela + Devin Scott. Northern California pool." },
+								{ "url": "19.jpg", "rel":"03", "caption":"Portrait of Devin Scott" },
+								{ "url": "20.jpg", "rel":"03", "caption":"Portrait of Devin Scott" },
+								{ "url": "21.jpg", "rel":"03", "caption":"Devin, backside grind. Northern California pool." },
+								{ "url": "22.jpg", "rel":"03", "caption":"Jen Valenzuela. Northern California pool." },
+								{ "url": "23.jpg", "rel":"03", "caption":"Jen. A POV shot while carving." },
+								{ "url": "24.jpg", "rel":"03", "caption":"Devin, frontside grind. Northern California pool." }
 							]
 						}
 				},
 
 				{ 
 					"id":"02",
-					"title":"Series 02: Evelyn at the Skate Park",
+					"title":"Series 02: Quality Peoples in Punta Burros, Mexico",
 					"photoSet":
 						{
 						"photo":
 							[
-								{ "url": "01.jpg", "rel":"02", "caption":"Evelyn May Abad gearing up for her skate session. (1)" },
-								{ "url": "02.jpg", "rel":"02", "caption":"Evelyn May Abad gearing up for her skate session. (2)" },
-								{ "url": "03.jpg", "rel":"02", "caption":"Evelyn May Abad gearing up for her skate session. (3)" },
-								{ "url": "04.jpg", "rel":"02", "caption":"Evelyn May Abad gearing up for her skate session. (4)" },
-								{ "url": "05.jpg", "rel":"02", "caption":"Skate session with the G-ZIP. (1)" },
-								{ "url": "06.jpg", "rel":"02", "caption":"Skate session with the G-ZIP. (2)" },
-								{ "url": "07.jpg", "rel":"02", "caption":"Evelyn May Abad, boardslide at Lake Cunningham Skatepark. (1)" },
-								{ "url": "08.jpg", "rel":"02", "caption":"Evelyn May Abad, boardslide at Lake Cunningham Skatepark. (2)" },
-								{ "url": "09.jpg", "rel":"02", "caption":"Portrait of Evelyn May Abad at the Skull Bowl." }
+								{ "url": "01.jpg", "rel":"02", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (1)" },
+								{ "url": "02.jpg", "rel":"02", "caption":"Palapa at sunset. Punta Burros, Mexico." },
+								{ "url": "03.jpg", "rel":"02", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (2)" },
+								{ "url": "04.jpg", "rel":"02", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (3)" },
+								{ "url": "05.jpg", "rel":"02", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (4)" },
+								{ "url": "06.jpg", "rel":"02", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (5)" },
+								{ "url": "07.jpg", "rel":"02", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (6)" },
+								{ "url": "08.jpg", "rel":"02", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (7)" },
+								{ "url": "09.jpg", "rel":"02", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (8)" },
+								{ "url": "10.jpg", "rel":"02", "caption":"G-GRIP bluetooth wireless speaker (1)" },
+								{ "url": "11.jpg", "rel":"02", "caption":"G-GRIP bluetooth wireless speaker (2)" },
+								{ "url": "12.jpg", "rel":"02", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (9)" },
+								{ "url": "13.jpg", "rel":"02", "caption":"Ed Fladung surfing in Punta Burros, Mexico. (1)" },
+								{ "url": "14.jpg", "rel":"02", "caption":"Quality Peoples (toes). Punta Burros, Mexico." },
+								{ "url": "15.jpg", "rel":"02", "caption":"Ed Fladung of Quality Peoples. Punta Burros, Mexico. (10)" },
+								{ "url": "16.jpg", "rel":"02", "caption":"Ed Fladung surfing in Punta Burros, Mexico. (2)" },
+								{ "url": "17.jpg", "rel":"02", "caption":"Surfing a log. Punta Burros, Mexico." }
 							]
 						}
 				},
+
 
 				{ 
 					"id":"01",
